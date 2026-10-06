@@ -1,0 +1,68 @@
+/* Pengaturan Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Mengatur Tata Letak Kartu Sejajar dengan Flexbox */
+.produk-list {
+    display: flex;
+    justify-content: center; /* Bisa diganti space-between jika ingin renggang maksimal */
+    gap: 20px;               /* Jarak antar kartu */
+    flex-wrap: wrap;         /* Agar responsif di layar kecil */
+}
+
+/* Mengatur Tampilan Setiap Kartu */
+.kartu {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    
+    /* Mengatur isi kartu agar tersusun vertikal & berada di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kartu h3 {
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.kartu .harga {
+    color: #29ce65;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.kartu button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.kartu button:hover {
+    background-color: #2980b9;
+}
